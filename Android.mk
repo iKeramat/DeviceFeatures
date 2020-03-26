@@ -6,7 +6,7 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx.preference_preference
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
-LOCAL_PACKAGE_NAME := XiaomiParts
+LOCAL_PACKAGE_NAME := DeviceFeatures
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_PRIVATE_PLATFORM_APIS := true
