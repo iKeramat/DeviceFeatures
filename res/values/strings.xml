@@ -79,10 +79,6 @@
     <string name="fingerprint_as_button_title">Fingerprint as button</string>
     <string name="fingerprint_as_button_summary">Use fingerprint reader as a customizable button</string>
 
-    <!-- Fingerprint pocketmode -->
-	<string name="fingerprint_pocketmode_title">Fingerprint pocketmode</string>
-	<string name="fingerprint_pocketmode_summary">Turn off fingerprint when your device is in the pocket</string>
-
     <!-- Gestures -->
     <string name="gestures_title">Gestures</string>
 

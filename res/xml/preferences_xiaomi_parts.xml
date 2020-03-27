@@ -93,12 +93,6 @@
             android:key="fingerprint_as_button"
             android:summary="@string/fingerprint_as_button_summary"
             android:title="@string/fingerprint_as_button_title" />
-
-        <org.lineageos.settings.device.preferences.SecureSettingSwitchPreference
-            android:defaultValue="false"
-            android:key="fingerprint_pocketmode"
-            android:summary="@string/fingerprint_pocketmode_summary"
-            android:title="@string/fingerprint_pocketmode_title" />
     </PreferenceCategory>
 
     <PreferenceCategory
