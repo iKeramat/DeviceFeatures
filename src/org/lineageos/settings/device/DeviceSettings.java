@@ -56,6 +56,11 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String PREF_SWAP_BUTTONS = "swapbuttons";
     public static final String SWAP_BUTTONS_PATH = "/proc/touchpanel/reversed_keys_enable";
 
+    // Fingerprint
+    // Fingerprint Wakeup
+    public static final String PREF_FINGERPRINT_WAKEUP = "fingerprint_wakeup";
+    public static final String FINGERPRINT_WAKEUP_PATH = "/sys/devices/soc/soc:fpc_fpc1020/enable_wakeup";
+
     // onCreatePreferences
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -90,6 +95,13 @@ public class DeviceSettings extends PreferenceFragment implements
         } else {
             getPreferenceScreen().removePreference(findPreference(CATEGORY_BUTTONS));
         }
+        if (FileUtils.fileWritable(FINGERPRINT_WAKEUP_PATH)) {
+            SecureSettingSwitchPreference fingerprint_wakeup = (SecureSettingSwitchPreference) findPreference(PREF_FINGERPRINT_WAKEUP);
+            fingerprint_wakeup.setChecked(FileUtils.getFileValueAsBoolean(FINGERPRINT_WAKEUP_PATH, false));
+            fingerprint_wakeup.setOnPreferenceChangeListener(this);
+        } else {
+            getPreferenceScreen().removePreference(findPreference(PREF_FINGERPRINT_WAKEUP));
+        }
     }
 
     // onPreferenceChange
@@ -110,6 +122,10 @@ public class DeviceSettings extends PreferenceFragment implements
 
             case PREF_SWAP_BUTTONS:
                 FileUtils.setValue(SWAP_BUTTONS_PATH, (boolean) value);
+                break;
+
+            case PREF_FINGERPRINT_WAKEUP:
+                FileUtils.setValue(FINGERPRINT_WAKEUP_PATH, (boolean) value);
                 break;
 
             default:

@@ -78,4 +78,14 @@
             android:summary="@string/swapbuttons_summary"
             android:title="@string/swapbuttons_title" />
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/fingerprint_title">
+
+        <org.lineageos.settings.device.preferences.SecureSettingSwitchPreference
+            android:defaultValue="false"
+            android:key="fingerprint_wakeup"
+            android:summary="@string/fingerprint_wakeup_summary"
+            android:title="@string/fingerprint_wakeup_title" />
+    </PreferenceCategory>
 </PreferenceScreen>

@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <resources>
-     <!-- Title names and summary-->
+     <!-- Title names and summary -->
     <string name="advanced_settings">Device Features</string>
     <string name="advanced_settings_summary">Device specific options</string>
 
@@ -64,9 +64,16 @@
     <!-- Butoons -->
     <string name="button_title">Buttons</string>
 
-    <!-- Swap buttons-->
+    <!-- Swap buttons -->
     <string name="swapbuttons_title">Swap buttons</string>
     <string name="swapbuttons_summary">Swap the order of recents and back buttons</string>
+
+    <!-- Fingerprint -->
+    <string name="fingerprint_title">Fingerprint options</string>
+
+    <!-- Fingerprint wakeup -->
+    <string name="fingerprint_wakeup_title">Fingerprint wakes device</string>
+    <string name="fingerprint_wakeup_summary">Allow fingerprint to wake the device while screen is off</string>
 
     <!-- Spectrum Profiles -->
     <string name="spectrum_profile_title">Performance</string>
