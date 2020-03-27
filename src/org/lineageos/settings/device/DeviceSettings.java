@@ -31,28 +31,30 @@ import org.lineageos.settings.device.preferences.VibrationSeekBarPreference;
 public class DeviceSettings extends PreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    // Vibration
     public static final String PREF_VIBRATION_STRENGTH = "vibration_strength";
     public static final String VIBRATION_STRENGTH_PATH = "/sys/class/timed_output/vibrator/vtg_level";
-
-    // value of vtg_min and vtg_max
     public static final int MIN_VIBRATION = 12;
     public static final int MAX_VIBRATION = 127;
 
+    // Display
     private static final String CATEGORY_DISPLAY = "display";
     private static final String PREF_DEVICE_DOZE = "device_doze";
     private static final String PREF_DEVICE_KCAL = "device_kcal";
+    private static final String DEVICE_DOZE_PACKAGE_NAME = "org.lineageos.settings.doze";
 
+    // Spectrum
     public static final String PREF_SPECTRUM = "spectrum";
     public static final String SPECTRUM_PATH = "/sys/devices/virtual/thermal/thermal_message/sconfig";
+    private SecureSettingListPreference mSPECTRUM;
 
+
+    // Wakeup Hall
     private static final String CATEGORY_HALL_WAKEUP = "hall_wakeup";
     public static final String PREF_HALL_WAKEUP = "hall";
     public static final String HALL_WAKEUP_PATH = "/sys/module/hall/parameters/hall_toggle";
 
-    private static final String DEVICE_DOZE_PACKAGE_NAME = "org.lineageos.settings.doze";
-
-    private SecureSettingListPreference mSPECTRUM;
-
+    // onCreatePreferences
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.preferences_xiaomi_parts, rootKey);
@@ -88,6 +90,7 @@ public class DeviceSettings extends PreferenceFragment implements
         }
     }
 
+    // onPreferenceChange
     @Override
     public boolean onPreferenceChange(Preference preference, Object value) {
         final String key = preference.getKey();
@@ -113,6 +116,7 @@ public class DeviceSettings extends PreferenceFragment implements
         return true;
     }
 
+    // isAppNotInstalled
     private boolean isAppNotInstalled(String uri) {
         PackageManager packageManager = getContext().getPackageManager();
         try {
