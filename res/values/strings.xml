@@ -90,6 +90,14 @@
     <string name="double_tap_to_wake_title">Double Tap to wake</string>
     <string name="double_tap_to_wake_summary">Double tap on screen wake device</string>
 
+    <!-- Privacy -->
+    <string name="privacy_title">Privacy</string>
+
+    <!-- Disable new usb -->
+    <string name="disable_new_usb_title">Restrict USB</string>
+    <string name="disable_new_usb_summary">Disable new USB gadgets</string>
+
+
     <!-- Spectrum Profiles -->
     <string name="spectrum_profile_title">Performance</string>
     <string name="spectrum_title">Performance Settings</string>
