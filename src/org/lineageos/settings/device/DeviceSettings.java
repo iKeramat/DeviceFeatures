@@ -45,7 +45,7 @@ public class DeviceSettings extends PreferenceFragment implements
 
     // Spectrum
     public static final String PREF_SPECTRUM = "spectrum";
-    public static final String SPECTRUM_PATH = "/sys/devices/virtual/thermal/thermal_message/sconfig";
+    public static final String SPECTRUM_SYSTEM_PROPERTY = "persist.spectrum.profile";
     private SecureSettingListPreference mSPECTRUM;
 
 
@@ -92,7 +92,7 @@ public class DeviceSettings extends PreferenceFragment implements
         });
 
         mSPECTRUM = (SecureSettingListPreference) findPreference(PREF_SPECTRUM);
-        mSPECTRUM.setValue(FileUtils.getValue(SPECTRUM_PATH));
+        mSPECTRUM.setValue(FileUtils.getStringProp(SPECTRUM_SYSTEM_PROPERTY, "0"));
         mSPECTRUM.setSummary(mSPECTRUM.getEntry());
         mSPECTRUM.setOnPreferenceChangeListener(this);
 
@@ -139,7 +139,7 @@ public class DeviceSettings extends PreferenceFragment implements
             case PREF_SPECTRUM:
                 mSPECTRUM.setValue((String) value);
                 mSPECTRUM.setSummary(mSPECTRUM.getEntry());
-                FileUtils.setValue(SPECTRUM_PATH, (String) value);
+                FileUtils.setStringProp(SPECTRUM_SYSTEM_PROPERTY, (String) value);
                 break;
 
             case PREF_SWAP_BUTTONS:

@@ -7,8 +7,7 @@ public class PerformanceTileService extends TileService {
 
     @Override
     public void onStartListening() {
-
-        int currentState = Integer.parseInt(FileUtils.getValue(DeviceSettings.SPECTRUM_PATH));
+        int currentState = FileUtils.getintProp(DeviceSettings.SPECTRUM_SYSTEM_PROPERTY, 0);
 
         Tile tile = getQsTile();
         tile.setState(Tile.STATE_ACTIVE);
@@ -20,7 +19,7 @@ public class PerformanceTileService extends TileService {
 
     @Override
     public void onClick() {
-        int currentState = Integer.parseInt(FileUtils.getValue(DeviceSettings.SPECTRUM_PATH));
+        int currentState = FileUtils.getintProp(DeviceSettings.SPECTRUM_SYSTEM_PROPERTY, 0);
 
         int nextState;
         if (currentState == 4) {
@@ -30,7 +29,7 @@ public class PerformanceTileService extends TileService {
         }
 
         Tile tile = getQsTile();
-        FileUtils.setValue(DeviceSettings.SPECTRUM_PATH, nextState);
+        FileUtils.setintProp(DeviceSettings.SPECTRUM_SYSTEM_PROPERTY, nextState);
         tile.setLabel(getResources().getStringArray(R.array.spectrum_profiles)[nextState]);
 
         tile.updateTile();
