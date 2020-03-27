@@ -83,6 +83,13 @@
 	<string name="fingerprint_pocketmode_title">Fingerprint pocketmode</string>
 	<string name="fingerprint_pocketmode_summary">Turn off fingerprint when your device is in the pocket</string>
 
+    <!-- Gestures -->
+    <string name="gestures_title">Gestures</string>
+
+    <!-- Double tap to wake -->
+    <string name="double_tap_to_wake_title">Double Tap to wake</string>
+    <string name="double_tap_to_wake_summary">Double tap on screen wake device</string>
+
     <!-- Spectrum Profiles -->
     <string name="spectrum_profile_title">Performance</string>
     <string name="spectrum_title">Performance Settings</string>

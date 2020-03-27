@@ -100,4 +100,15 @@
             android:summary="@string/fingerprint_pocketmode_summary"
             android:title="@string/fingerprint_pocketmode_title" />
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="gestures"
+        android:title="@string/gestures_title">
+
+        <org.lineageos.settings.device.preferences.SecureSettingSwitchPreference
+            android:defaultValue="false"
+            android:key="double_tap_to_wake"
+            android:summary="@string/double_tap_to_wake_summary"
+            android:title="@string/double_tap_to_wake_title" />
+    </PreferenceCategory>
 </PreferenceScreen>

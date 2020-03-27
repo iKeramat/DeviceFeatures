@@ -69,6 +69,13 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String PREF_FINGERPRINT_POCKETMODE = "fingerprint_pocketmode";
     public static final String FINGERPRINT_POCKETMODE_PATH = "/sys/devices/soc/soc:fpc_fpc1020/proximity_state";
 
+    //Gestures
+    private static final String CATEGORY_GESTURES = "gestures";
+
+    // Double tap to wake
+    public static final String PREF_DOUBLE_TAP_TO_WAKE = "double_tap_to_wake";
+    public static final String DOUBLE_TAP_TO_WAKE_PATH = "/proc/touchpanel/double_tap_enable";
+
     // onCreatePreferences
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -124,6 +131,13 @@ public class DeviceSettings extends PreferenceFragment implements
         } else {
             getPreferenceScreen().removePreference(findPreference(PREF_FINGERPRINT_POCKETMODE));
         }
+        if (FileUtils.fileWritable(DOUBLE_TAP_TO_WAKE_PATH)) {
+            SecureSettingSwitchPreference double_tap_to_wake = (SecureSettingSwitchPreference) findPreference(PREF_DOUBLE_TAP_TO_WAKE);
+            double_tap_to_wake.setChecked(FileUtils.getFileValueAsBoolean(DOUBLE_TAP_TO_WAKE_PATH, false));
+            double_tap_to_wake.setOnPreferenceChangeListener(this);
+        } else {
+            getPreferenceScreen().removePreference(findPreference(CATEGORY_GESTURES));
+        }
     }
 
     // onPreferenceChange
@@ -156,6 +170,10 @@ public class DeviceSettings extends PreferenceFragment implements
 
             case PREF_FINGERPRINT_POCKETMODE:
                 FileUtils.setValue(FINGERPRINT_POCKETMODE_PATH, (boolean) value);
+                break;
+
+            case PREF_DOUBLE_TAP_TO_WAKE:
+                FileUtils.setValue(DOUBLE_TAP_TO_WAKE_PATH, (boolean) value);
                 break;
 
             default:
