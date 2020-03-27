@@ -17,7 +17,7 @@
      <!-- Title names and summary-->
     <string name="advanced_settings">Device Features</string>
     <string name="advanced_settings_summary">Device specific options</string>
-    
+
     <!-- Vibration -->
     <string name="vibration_title">Haptic feedback</string>
     <string name="vibration_strength_title">Strength</string>
@@ -61,10 +61,12 @@
     <string name="preset_warm_amoled">Warm Amoled</string>
     <string name="preset_hybrid_mamba">Hybrid Mamba</string>
 
-    <!-- Wakeup hall-->
-    <string name="hall_wakeup_title">Flip Cover Wakeup</string>
-    <string name="hall_title">Enable Flip Cover Wakeup</string>
-    <string name="hall_wakeup_summary">Wakeup device via magnetic Flip Cover</string>
+    <!-- Butoons -->
+    <string name="button_title">Buttons</string>
+
+    <!-- Swap buttons-->
+    <string name="swapbuttons_title">Swap buttons</string>
+    <string name="swapbuttons_summary">Swap the order of recents and back buttons</string>
 
     <!-- Spectrum Profiles -->
     <string name="spectrum_profile_title">Performance</string>

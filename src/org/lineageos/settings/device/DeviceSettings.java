@@ -49,10 +49,12 @@ public class DeviceSettings extends PreferenceFragment implements
     private SecureSettingListPreference mSPECTRUM;
 
 
-    // Wakeup Hall
-    private static final String CATEGORY_HALL_WAKEUP = "hall_wakeup";
-    public static final String PREF_HALL_WAKEUP = "hall";
-    public static final String HALL_WAKEUP_PATH = "/sys/module/hall/parameters/hall_toggle";
+    // Buttons
+    private static final String CATEGORY_BUTTONS = "buttons";
+
+    // Swap buttons
+    public static final String PREF_SWAP_BUTTONS = "swapbuttons";
+    public static final String SWAP_BUTTONS_PATH = "/proc/touchpanel/reversed_keys_enable";
 
     // onCreatePreferences
     @Override
@@ -81,12 +83,12 @@ public class DeviceSettings extends PreferenceFragment implements
         mSPECTRUM.setSummary(mSPECTRUM.getEntry());
         mSPECTRUM.setOnPreferenceChangeListener(this);
 
-        if (FileUtils.fileWritable(HALL_WAKEUP_PATH)) {
-            SecureSettingSwitchPreference hall = (SecureSettingSwitchPreference) findPreference(PREF_HALL_WAKEUP);
-            hall.setChecked(FileUtils.getValue(HALL_WAKEUP_PATH).equals("Y"));
-            hall.setOnPreferenceChangeListener(this);
+        if (FileUtils.fileWritable(SWAP_BUTTONS_PATH)) {
+            SecureSettingSwitchPreference swapbuttons = (SecureSettingSwitchPreference) findPreference(PREF_SWAP_BUTTONS);
+            swapbuttons.setChecked(FileUtils.getFileValueAsBoolean(SWAP_BUTTONS_PATH, false));
+            swapbuttons.setOnPreferenceChangeListener(this);
         } else {
-            getPreferenceScreen().removePreference(findPreference(CATEGORY_HALL_WAKEUP));
+            getPreferenceScreen().removePreference(findPreference(CATEGORY_BUTTONS));
         }
     }
 
@@ -106,8 +108,8 @@ public class DeviceSettings extends PreferenceFragment implements
                 FileUtils.setValue(SPECTRUM_PATH, (String) value);
                 break;
 
-            case PREF_HALL_WAKEUP:
-                FileUtils.setValue(HALL_WAKEUP_PATH, (boolean) value ? "Y" : "N");
+            case PREF_SWAP_BUTTONS:
+                FileUtils.setValue(SWAP_BUTTONS_PATH, (boolean) value);
                 break;
 
             default:

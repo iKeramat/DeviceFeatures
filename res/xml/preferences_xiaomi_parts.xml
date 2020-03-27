@@ -69,13 +69,13 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="hall_wakeup"
-        android:title="@string/hall_wakeup_title">
+        android:key="buttons"
+        android:title="@string/button_title">
 
         <org.lineageos.settings.device.preferences.SecureSettingSwitchPreference
-            android:defaultValue="true"
-            android:key="hall"
-            android:summary="@string/hall_wakeup_summary"
-            android:title="@string/hall_title" />
+            android:defaultValue="false"
+            android:key="swapbuttons"
+            android:summary="@string/swapbuttons_summary"
+            android:title="@string/swapbuttons_title" />
     </PreferenceCategory>
 </PreferenceScreen>
