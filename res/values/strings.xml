@@ -79,6 +79,10 @@
     <string name="fingerprint_as_button_title">Fingerprint as button</string>
     <string name="fingerprint_as_button_summary">Use fingerprint reader as a customizable button</string>
 
+    <!-- Fingerprint pocketmode -->
+	<string name="fingerprint_pocketmode_title">Fingerprint pocketmode</string>
+	<string name="fingerprint_pocketmode_summary">Turn off fingerprint when your device is in the pocket</string>
+
     <!-- Spectrum Profiles -->
     <string name="spectrum_profile_title">Performance</string>
     <string name="spectrum_title">Performance Settings</string>

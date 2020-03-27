@@ -63,5 +63,7 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
                 context.getContentResolver(), DeviceSettings.PREF_FINGERPRINT_WAKEUP, 0));
         FileUtils.setValue(DeviceSettings.FINGERPRINT_AS_BUTTON_PATH, Settings.Secure.getInt(
                 context.getContentResolver(), DeviceSettings.PREF_FINGERPRINT_AS_BUTTON, 0));
+        FileUtils.setValue(DeviceSettings.FINGERPRINT_POCKETMODE_PATH, Settings.Secure.getInt(
+                context.getContentResolver(), DeviceSettings.PREF_FINGERPRINT_POCKETMODE, 0));
     }
 }

@@ -65,6 +65,10 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String PREF_FINGERPRINT_AS_BUTTON = "fingerprint_as_button";
     public static final String FINGERPRINT_AS_BUTTON_PATH = "/sys/devices/soc/soc:fpc_fpc1020/enable_key_events";
 
+    // Fingerprint pocketmode
+    public static final String PREF_FINGERPRINT_POCKETMODE = "fingerprint_pocketmode";
+    public static final String FINGERPRINT_POCKETMODE_PATH = "/sys/devices/soc/soc:fpc_fpc1020/proximity_state";
+
     // onCreatePreferences
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -113,6 +117,13 @@ public class DeviceSettings extends PreferenceFragment implements
         } else {
             getPreferenceScreen().removePreference(findPreference(PREF_FINGERPRINT_AS_BUTTON));
         }
+        if (FileUtils.fileWritable(FINGERPRINT_POCKETMODE_PATH)) {
+            SecureSettingSwitchPreference fingerprint_pocketmode = (SecureSettingSwitchPreference) findPreference(PREF_FINGERPRINT_POCKETMODE);
+            fingerprint_pocketmode.setChecked(FileUtils.getFileValueAsBoolean(FINGERPRINT_POCKETMODE_PATH, false));
+            fingerprint_pocketmode.setOnPreferenceChangeListener(this);
+        } else {
+            getPreferenceScreen().removePreference(findPreference(PREF_FINGERPRINT_POCKETMODE));
+        }
     }
 
     // onPreferenceChange
@@ -141,6 +152,10 @@ public class DeviceSettings extends PreferenceFragment implements
 
             case PREF_FINGERPRINT_AS_BUTTON:
                 FileUtils.setValue(FINGERPRINT_AS_BUTTON_PATH, (boolean) value);
+                break;
+
+            case PREF_FINGERPRINT_POCKETMODE:
+                FileUtils.setValue(FINGERPRINT_POCKETMODE_PATH, (boolean) value);
                 break;
 
             default:
