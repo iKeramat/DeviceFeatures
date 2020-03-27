@@ -61,6 +61,10 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String PREF_FINGERPRINT_WAKEUP = "fingerprint_wakeup";
     public static final String FINGERPRINT_WAKEUP_PATH = "/sys/devices/soc/soc:fpc_fpc1020/enable_wakeup";
 
+    // Fingerprint as button
+    public static final String PREF_FINGERPRINT_AS_BUTTON = "fingerprint_as_button";
+    public static final String FINGERPRINT_AS_BUTTON_PATH = "/sys/devices/soc/soc:fpc_fpc1020/enable_key_events";
+
     // onCreatePreferences
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -102,6 +106,13 @@ public class DeviceSettings extends PreferenceFragment implements
         } else {
             getPreferenceScreen().removePreference(findPreference(PREF_FINGERPRINT_WAKEUP));
         }
+        if (FileUtils.fileWritable(FINGERPRINT_AS_BUTTON_PATH)) {
+            SecureSettingSwitchPreference fingerprint_as_button = (SecureSettingSwitchPreference) findPreference(PREF_FINGERPRINT_AS_BUTTON);
+            fingerprint_as_button.setChecked(FileUtils.getFileValueAsBoolean(FINGERPRINT_AS_BUTTON_PATH, false));
+            fingerprint_as_button.setOnPreferenceChangeListener(this);
+        } else {
+            getPreferenceScreen().removePreference(findPreference(PREF_FINGERPRINT_AS_BUTTON));
+        }
     }
 
     // onPreferenceChange
@@ -126,6 +137,10 @@ public class DeviceSettings extends PreferenceFragment implements
 
             case PREF_FINGERPRINT_WAKEUP:
                 FileUtils.setValue(FINGERPRINT_WAKEUP_PATH, (boolean) value);
+                break;
+
+            case PREF_FINGERPRINT_AS_BUTTON:
+                FileUtils.setValue(FINGERPRINT_AS_BUTTON_PATH, (boolean) value);
                 break;
 
             default:
