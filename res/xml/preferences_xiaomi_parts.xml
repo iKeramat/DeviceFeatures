@@ -116,4 +116,17 @@
             android:summary="@string/disable_new_usb_summary"
             android:title="@string/disable_new_usb_title" />
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="torch"
+        android:title="@string/torch_title">
+
+        <org.lineageos.settings.device.preferences.SecureSettingCustomSeekBarPreference
+            android:defaultValue="100"
+            android:key="torch_brightness"
+            android:max="200"
+            app:min="1"
+            android:title="@string/torch_brightness_title" />
+
+    </PreferenceCategory>
 </PreferenceScreen>

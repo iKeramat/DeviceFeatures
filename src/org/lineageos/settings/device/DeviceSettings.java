@@ -24,6 +24,7 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 
 import org.lineageos.settings.device.kcal.KCalSettingsActivity;
+import org.lineageos.settings.device.preferences.SecureSettingCustomSeekBarPreference;
 import org.lineageos.settings.device.preferences.SecureSettingListPreference;
 import org.lineageos.settings.device.preferences.SecureSettingSwitchPreference;
 import org.lineageos.settings.device.preferences.VibrationSeekBarPreference;
@@ -79,10 +80,23 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String PREF_DISABLE_NEW_USB = "disable_new_usb";
     public static final String DISABLE_NEW_USB_PATH = "/proc/sys/kernel/deny_new_usb";
 
+    // Torch
+    public static final String PREF_TORCH_BRIGHTNESS = "torch_brightness";
+    public static final String TORCH_1_BRIGHTNESS_PATH = "/sys/devices/soc/400f000.qcom," +
+            "spmi/spmi-0/spmi0-03/400f000.qcom,spmi:qcom,pmi8994@3:qcom,leds@d300/leds/led:torch_0/max_brightness";
+    public static final String TORCH_2_BRIGHTNESS_PATH = "/sys/devices/soc/400f000.qcom," +
+            "spmi/spmi-0/spmi0-03/400f000.qcom,spmi:qcom,pmi8994@3:qcom,leds@d300/leds/led:torch_1/max_brightness";
+
     // onCreatePreferences
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.preferences_xiaomi_parts, rootKey);
+
+
+        SecureSettingCustomSeekBarPreference TorchBrightness = (SecureSettingCustomSeekBarPreference) findPreference(PREF_TORCH_BRIGHTNESS);
+        TorchBrightness.setEnabled(FileUtils.fileWritable(TORCH_1_BRIGHTNESS_PATH) &&
+                FileUtils.fileWritable(TORCH_2_BRIGHTNESS_PATH));
+        TorchBrightness.setOnPreferenceChangeListener(this);
 
         VibrationSeekBarPreference vibrationStrength = (VibrationSeekBarPreference) findPreference(PREF_VIBRATION_STRENGTH);
         vibrationStrength.setEnabled(FileUtils.fileWritable(VIBRATION_STRENGTH_PATH));
@@ -148,6 +162,11 @@ public class DeviceSettings extends PreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object value) {
         final String key = preference.getKey();
         switch (key) {
+            case PREF_TORCH_BRIGHTNESS:
+                FileUtils.setValue(TORCH_1_BRIGHTNESS_PATH, (int) value);
+                FileUtils.setValue(TORCH_2_BRIGHTNESS_PATH, (int) value);
+                break;
+                
             case PREF_VIBRATION_STRENGTH:
                 double vibrationValue = (int) value / 100.0 * (MAX_VIBRATION - MIN_VIBRATION) + MIN_VIBRATION;
                 FileUtils.setValue(VIBRATION_STRENGTH_PATH, vibrationValue);

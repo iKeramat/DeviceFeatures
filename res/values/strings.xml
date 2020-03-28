@@ -93,7 +93,10 @@
     <string name="disable_new_usb_title">Restrict USB</string>
     <string name="disable_new_usb_summary">Disable new USB gadgets</string>
 
-
+	<!-- Torch -->
+    <string name="torch_title">Torch</string>
+    <string name="torch_brightness_title">Brightness</string>
+    
     <!-- Spectrum Profiles -->
     <string name="spectrum_profile_title">Performance</string>
     <string name="spectrum_title">Performance Settings</string>
