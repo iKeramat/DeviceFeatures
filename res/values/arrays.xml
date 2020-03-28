@@ -42,6 +42,8 @@
         <item>@string/preset_extreme_amoled</item>
         <item>@string/preset_warm_amoled</item>
         <item>@string/preset_hybrid_mamba</item>
+        <item>@string/preset_hide_ge1</item>
+        <item>@string/preset_hide_ge2</item>
     </array>
 
     <array name="preset_values">
@@ -57,5 +59,7 @@
         <item>255 255 255 35 65 114 136 0</item>
         <item>253 246 243 35 50 123 130 0</item>
         <item>226 215 255 35 40 119 132 10</item>
+        <item>199 199 210 35 35 144 144 0</item>
+        <item>230 230 244 35 35 144 144 0</item>
     </array>
 </resources>

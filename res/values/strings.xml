@@ -61,6 +61,8 @@
     <string name="preset_extreme_amoled">Extreme Amoled</string>
     <string name="preset_warm_amoled">Warm Amoled</string>
     <string name="preset_hybrid_mamba">Hybrid Mamba</string>
+    <string name="preset_hide_ge1">Hide Ghosting Effect 1</string>
+    <string name="preset_hide_ge2">Hide Ghosting Effect 2</string>
 
     <!-- Butoons -->
     <string name="button_title">Buttons</string>
