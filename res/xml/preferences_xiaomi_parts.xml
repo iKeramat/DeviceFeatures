@@ -35,6 +35,7 @@
         <Preference
             android:key="device_kcal"
             android:persistent="false"
+            android:summary="@string/device_kcal_summary"
             android:title="@string/device_kcal_title">
             <intent
                 android:action="android.intent.action.MAIN"

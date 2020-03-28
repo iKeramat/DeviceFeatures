@@ -31,6 +31,7 @@
 
     <!-- kcal -->
     <string name="device_kcal_title">Display Color Calibration</string>
+     <string name="device_kcal_summary">Display color calibration using KCAL</string>
     <string name="advanced_settings_kcal">Display Color Calibration</string>
     <string name="cat_colormanagement">Color Settings</string>
     <string name="cat_calibration">Display Calibration</string>
