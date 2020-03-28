@@ -79,6 +79,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".KeyHandler" />
+        
         <service
             android:name=".PerformanceTileService"
             android:icon="@drawable/spectrum_balance"
