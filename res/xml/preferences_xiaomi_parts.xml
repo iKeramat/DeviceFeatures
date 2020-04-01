@@ -58,18 +58,6 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="privacy"
-        android:title="@string/privacy_title">
-
-        <org.lineageos.settings.device.preferences.SecureSettingSwitchPreference
-            android:defaultValue="false"
-            android:key="disable_new_usb"
-            android:summary="@string/disable_new_usb_summary"
-            android:title="@string/disable_new_usb_title"
-            android:icon="@drawable/ic_usb" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:key="vibration"
         android:title="@string/vibration_title">
 

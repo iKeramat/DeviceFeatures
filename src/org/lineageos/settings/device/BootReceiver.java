@@ -69,7 +69,5 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
                 context.getContentResolver(), DeviceSettings.PREF_FINGERPRINT_AS_BUTTON, 0));
         FileUtils.setValue(DeviceSettings.DOUBLE_TAP_TO_WAKE_PATH, Settings.Secure.getInt(
                 context.getContentResolver(), DeviceSettings.PREF_DOUBLE_TAP_TO_WAKE, 0));
-        FileUtils.setValue(DeviceSettings.DISABLE_NEW_USB_PATH, Settings.Secure.getInt(
-                context.getContentResolver(), DeviceSettings.PREF_DISABLE_NEW_USB, 0));
     }
 }

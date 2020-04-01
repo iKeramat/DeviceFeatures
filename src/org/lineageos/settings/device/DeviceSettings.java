@@ -73,13 +73,6 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String PREF_DOUBLE_TAP_TO_WAKE = "double_tap_to_wake";
     public static final String DOUBLE_TAP_TO_WAKE_PATH = "/proc/touchpanel/double_tap_enable";
 
-    // Privacy
-    private static final String CATEGORY_PRIVACY = "privacy";
-
-    // Disable new usb
-    public static final String PREF_DISABLE_NEW_USB = "disable_new_usb";
-    public static final String DISABLE_NEW_USB_PATH = "/proc/sys/kernel/deny_new_usb";
-
     // Torch
     public static final String PREF_TORCH_BRIGHTNESS = "torch_brightness";
     public static final String TORCH_1_BRIGHTNESS_PATH = "/sys/devices/soc/400f000.qcom," +
@@ -148,13 +141,6 @@ public class DeviceSettings extends PreferenceFragment implements
         } else {
             getPreferenceScreen().removePreference(findPreference(CATEGORY_GESTURES));
         }
-        if (FileUtils.fileWritable(DISABLE_NEW_USB_PATH)) {
-            SecureSettingSwitchPreference disable_new_usb = (SecureSettingSwitchPreference) findPreference(PREF_DISABLE_NEW_USB);
-            disable_new_usb.setChecked(FileUtils.getFileValueAsBoolean(DISABLE_NEW_USB_PATH, false));
-            disable_new_usb.setOnPreferenceChangeListener(this);
-        } else {
-            getPreferenceScreen().removePreference(findPreference(CATEGORY_PRIVACY));
-        }
     }
 
     // onPreferenceChange
@@ -192,10 +178,6 @@ public class DeviceSettings extends PreferenceFragment implements
 
             case PREF_DOUBLE_TAP_TO_WAKE:
                 FileUtils.setValue(DOUBLE_TAP_TO_WAKE_PATH, (boolean) value);
-                break;
-
-            case PREF_DISABLE_NEW_USB:
-                FileUtils.setValue(DISABLE_NEW_USB_PATH, (boolean) value);
                 break;
 
             default:

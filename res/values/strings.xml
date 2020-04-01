@@ -89,13 +89,6 @@
     <string name="double_tap_to_wake_title">Double Tap to wake</string>
     <string name="double_tap_to_wake_summary">Double tap on screen wake device</string>
 
-    <!-- Privacy -->
-    <string name="privacy_title">Privacy</string>
-
-    <!-- Disable new usb -->
-    <string name="disable_new_usb_title">Restrict USB</string>
-    <string name="disable_new_usb_summary">Disable new USB gadgets</string>
-
 	<!-- Torch -->
     <string name="torch_title">Torch</string>
     <string name="torch_brightness_title">Brightness</string>
