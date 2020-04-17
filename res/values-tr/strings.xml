@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name and summary -->
+    <string name="advanced_settings">Cihaz Ayarları</string>
+    <string name="advanced_settings_summary">Cihaza özel ayarlar</string>
+
+    <!-- Buttons -->
+    <string name="buttons_title">Butonlar</string>
+    <string name="swapbuttons_title">Butonların yerlerini değiştir</string>
+    <string name="swapbuttons_summary">Son uygulamalar ve geri butonlarının yerlerini değiştir</string>
+
+	<!-- Fingerprint options -->
+    <string name="fingerprint_title">Parmak izi ayarları</string>
+    <string name="fingerprint_wakeup_title">Parmak izi cihazı uyandırır</string>
+    <string name="fingerprint_wakeup_summary">Ekran kapalıyken parmak izinin cihazı uyandırmasına izin ver</string>
+    <string name="fingerprint_as_button_title">Parmak izi butonu</string>
+    <string name="fingerprint_as_button_summary">Parmak izi okuyucusunu bir buton olarak kullan</string>
+
+    <!-- Gestures -->
+    <string name="gestures_title">Hareketler</string>
+    <string name="double_tap_to_wake_title">Uyandırmak için çift dokunun</string>
+    <string name="double_tap_to_wake_summary">Ekrana iki kere dokunarak cihazı uyandırın</string>
+
+	<!-- Torch -->
+    <string name="torch_title">El feneri</string>
+    <string name="torch_brightness_title">Parlaklık</string>
+
+    <!-- Display -->
+    <string name="display_title">Ekran</string>
+
+    <!-- KCal -->
+    <string name="device_kcal_title">Ekran Rengi</string>
+    <string name="device_kcal_summary">KCAL ile renk kalibrasyonu</string>
+
+    <!-- Ambient Display -->
+    <string name="ambient_display_xiaomi">Xiaomi Doze</string>
+    <string name="advanced_doze_summary">Ortam Ekranı</string>
+
+    <string name="vibration_title">Dokunuşsal geri bildirim</string>
+    <string name="vibration_strength_title">Güç</string>
+
+    <!-- Spectrum Profiles -->
+    <string name="spectrum_profile_title">Performans</string>
+    <string name="spectrum_title">Performans Ayarları</string>
+    <string name="spectrum_summary">Performans ayarlarınızı seçin</string>
+    <string name="spectrum_dialogTitle">Performans ayarlarınızı seçin</string>
+
+    <!-- Values for Spectrum Presets -->
+    <string name="spectrum_performance">Performans</string>
+    <string name="spectrum_battery">Güç Tasarrufu</string>
+    <string name="spectrum_gaming">Oyun</string>
+    <string name="spectrum_balance">Dengeli</string>
+    <string name="spectrum_extreme_battery">Ekstra Güç Tasarrufu</string>
+
+    <!-- kcal -->
+    <string name="advanced_settings_kcal">Ekran Renk Kalibrasyonu</string>
+    <string name="cat_colormanagement">Renk Ayarları</string>
+    <string name="cat_calibration">Ekran Kalibrasyonu</string>
+
+    <string name="kcal_enabled">Açık</string>
+    <string name="kcal_disabled">Kapalı</string>
+    <string name="set_on_boot">Açılışta ayarla</string>
+    <string name="color_red">Kırmızı</string>
+    <string name="color_green">Yeşil</string>
+    <string name="color_blue">Mavi</string>
+    <string name="color_minimum">Minimum</string>
+    <string name="saturation">Doygunluk</string>
+    <string name="value">Değer</string>
+    <string name="contrast">Kontrast</string>
+    <string name="hue">Ton</string>
+    <string name="grayscale">Siyah beyaz ekran</string>
+    <string name="presets_dialog_title">Ön ayar Seçin</string>
+
+    <!-- Presets -->
+    <string name="preset_default">Varsayılan</string>
+    <string name="preset_version_1">Versiyon 1</string>
+    <string name="preset_version_2">Versiyon 2</string>
+    <string name="preset_version_3">Versiyon 3</string>
+    <string name="preset_triluminous">Triluminous</string>
+    <string name="preset_deep_black_white">Derin Siyah ve Beyaz</string>
+    <string name="preset_deep_natural">Derin Doğal</string>
+    <string name="preset_cool_amoled">Soğuk AMOLED</string>
+    <string name="preset_extreme_amoled">Extreme AMOLED</string>
+    <string name="preset_warm_amoled">Sıcak AMOLED</string>
+    <string name="preset_hybrid_mamba">Hibrit Mamba</string>
+    <string name="preset_hide_ge1">Hayalet Ekran Gizleme 1</string>
+    <string name="preset_hide_ge2">Hayalet Ekran Gizleme 2</string>
+
+    <!-- menu -->
+    <string name="kcal_presets">@string/presets_dialog_title</string>
+    <string name="kcal_reset">Sıfırla</string>
+
+    <!-- CustomSeekBarPreference -->
+    <string name="edit_value">Yeni değer seçin</string>
+    <string name="default_value">Varsayılan Değer</string>
+    <string name="edit_hint">%1$d ve %2$d arasında bir değer</string>
+</resources>

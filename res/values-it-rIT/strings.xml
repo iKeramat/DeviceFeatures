@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name and summary -->
+    <string name="advanced_settings">Opzioni dispositivo</string>
+    <string name="advanced_settings_summary">Opzioni specifiche del dispositivo</string>
+
+    <!-- Buttons -->
+    <string name="buttons_title">Pulsanti</string>
+    <string name="swapbuttons_title">Scambia pulsanti</string>
+    <string name="swapbuttons_summary">Inverti l\'ordine del tasto indietro e recenti</string>
+
+	<!-- Fingerprint options -->
+    <string name="fingerprint_title">Opzioni sensore di impronte digitali</string>
+    <string name="fingerprint_wakeup_title">Risveglio con il sensore di impronte</string>
+    <string name="fingerprint_wakeup_summary">Consenti al sensore di improte di risvegliare il dispositivo</string>
+    <string name="fingerprint_as_button_title">Sensore di impronte come plusante</string>
+    <string name="fingerprint_as_button_summary">Usa il sensore di impronte come un pulsante aggiuntivo</string>
+
+    <!-- Gestures -->
+    <string name="gestures_title">Gesti</string>
+    <string name="double_tap_to_wake_title">Doppio tocco</string>
+    <string name="double_tap_to_wake_summary">Doppio tocco per risvegliare il dispositivo</string>
+
+	<!-- Torch -->
+    <string name="torch_title">Torcia</string>
+    <string name="torch_brightness_title">Luminosità</string>
+
+    <!-- Display -->
+    <string name="display_title">Display</string>
+
+    <!-- KCal -->
+    <string name="device_kcal_title">Colori Display</string>
+    <string name="device_kcal_summary">Calibrazione dei colori del display tramite KCAL</string>
+
+    <!-- Ambient Display -->
+    <string name="ambient_display_xiaomi">Xiaomi Doze</string>
+    <string name="advanced_doze_summary">Ambient Display</string>
+
+    <string name="vibration_title">Vibrazione</string>
+    <string name="vibration_strength_title">Intensità</string>
+
+    <!-- Spectrum Profiles -->
+    <string name="spectrum_profile_title">Prestazioni</string>
+    <string name="spectrum_title">Impostazioni profilo</string>
+    <string name="spectrum_summary">Scegli il profilo delle prestazioni</string>
+    <string name="spectrum_dialogTitle">Scegli il profilo delle prestazioni</string>
+
+    <!-- Values for Spectrum Presets -->
+    <string name="spectrum_performance">Prestazioni</string>
+    <string name="spectrum_battery">Batteria</string>
+    <string name="spectrum_gaming">Gioco</string>
+    <string name="spectrum_balance">Bilanciato</string>
+    <string name="spectrum_extreme_battery">Risparmio batteria</string>
+
+    <!-- kcal -->
+    <string name="advanced_settings_kcal">Calibrazione colori display</string>
+    <string name="cat_colormanagement">Impostazioni colori</string>
+    <string name="cat_calibration">Calibrazione display</string>
+
+    <string name="kcal_enabled">On</string>
+    <string name="kcal_disabled">Off</string>
+    <string name="set_on_boot">Imposta all\'avvio</string>
+    <string name="color_red">Rosso</string>
+    <string name="color_green">Verde</string>
+    <string name="color_blue">Blu</string>
+    <string name="color_minimum">Minimo</string>
+    <string name="saturation">Saturazione</string>
+    <string name="value">Valore</string>
+    <string name="contrast">Contrasto</string>
+    <string name="hue">Colore</string>
+    <string name="grayscale">Scala di grigi</string>
+    <string name="presets_dialog_title">Seleziona profilo</string>
+
+    <!-- Presets -->
+    <string name="preset_default">Default</string>
+    <string name="preset_version_1">Versione 1</string>
+    <string name="preset_version_2">Versione 2</string>
+    <string name="preset_version_3">Versione 3</string>
+    <string name="preset_triluminous">Triluminous</string>
+    <string name="preset_deep_black_white">Bianco e nero profondo</string>
+    <string name="preset_deep_natural">Naturale</string>
+    <string name="preset_cool_amoled">Colori freddi Amoled</string>
+    <string name="preset_extreme_amoled">Colori forti Amoled</string>
+    <string name="preset_warm_amoled">Colori caldi Amoled</string>
+    <string name="preset_hybrid_mamba">Hybrid Mamba</string>
+    <string name="preset_hide_ge1">Limita effetto ghosting 1</string>
+    <string name="preset_hide_ge2">Limita effetto ghosting 2</string>
+
+    <!-- menu -->
+    <string name="kcal_presets">@string/presets_dialog_title</string>
+    <string name="kcal_reset">Reset</string>
+
+    <!-- CustomSeekBarPreference -->
+    <string name="edit_value">Scegli un nuovo valore</string>
+    <string name="default_value">Valore di default</string>
+    <string name="edit_hint">Valore tra %1$d e %2$d</string>
+</resources>
+ 

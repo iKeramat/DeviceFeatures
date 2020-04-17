@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name and summary -->
+    <string name="advanced_settings">ویژگی های دستگاه</string>
+    <string name="advanced_settings_summary">ویژگی های مخصوص دستگاه</string>
+
+    <!-- Buttons -->
+    <string name="buttons_title">دکمه ها</string>
+    <string name="swapbuttons_title">جا به جایی دکمه ها</string>
+    <string name="swapbuttons_summary">عوض کردن جای دکمه بازگشت و برنامه های باز</string>
+
+	<!-- Fingerprint options -->
+    <string name="fingerprint_title">تنظیمات اثر انگشت</string>
+    <string name="fingerprint_wakeup_title">بیدار کردن دستگاه با اثر انگشت</string>
+    <string name="fingerprint_wakeup_summary">هنگامی که صفحه دستگاه خاموش است آنرا با اثر انگشت روشن کنید</string>
+    <string name="fingerprint_as_button_title">اثر انگشت به جای دکمه</string>
+    <string name="fingerprint_as_button_summary">استفاده از اثر انگشت به عنوان یک دکمه</string>
+
+    <!-- Gestures -->
+    <string name="gestures_title">حرکت ها</string>
+    <string name="double_tap_to_wake_title">حالت دو ضربه</string>
+    <string name="double_tap_to_wake_summary">هنگامی که صفحه دستگاه خاموش است آنرا با دو ضربه روشن کنید</string>
+
+	<!-- Torch -->
+    <string name="torch_title">چراغ قوه</string>
+    <string name="torch_brightness_title">نور چراغ قوه</string>
+
+    <!-- Display -->
+    <string name="display_title">صفحه نمایش</string>
+
+    <!-- KCal -->
+    <string name="device_kcal_title">رنگ های صفحه نمایش</string>
+    <string name="device_kcal_summary">کالیبره کردن رنگ های صفحه نمایش</string>
+
+    <!-- Ambient Display -->
+    <string name="ambient_display_xiaomi">نمایشگر محیط</string>
+    <string name="advanced_doze_summary">محافظ صفحه نمایش</string>
+
+    <string name="vibration_title">تنظیم لرزش دستگاه</string>
+    <string name="vibration_strength_title">لرزش</string>
+
+    <!-- Spectrum Profiles -->
+    <string name="spectrum_profile_title">تنظیم پردازشگر</string>
+    <string name="spectrum_title">تنظیم سرعت پردازشگر</string>
+    <string name="spectrum_summary">سرعت پرزاشگر را انتخاب کنید</string>
+    <string name="spectrum_dialogTitle">سرعت پرزاشگر را انتخاب کنید</string>
+
+    <!-- Values for Spectrum Presets -->
+    <string name="spectrum_performance">قدرتمند</string>
+    <string name="spectrum_battery">ذخیره باتری</string>
+    <string name="spectrum_gaming">بازی</string>
+    <string name="spectrum_balance">عادی</string>
+    <string name="spectrum_extreme_battery">ذخیره بیشتر باتری</string>
+
+    <!-- kcal -->
+    <string name="advanced_settings_kcal">کالیبره کردن رنگ های صفحه نمایش</string>
+    <string name="cat_colormanagement">تنظیم رنگ ها</string>
+    <string name="cat_calibration">کالیبره کردن صفحه نمایش</string>
+
+    <string name="kcal_enabled">روشن</string>
+    <string name="kcal_disabled">خاموش</string>
+    <string name="set_on_boot">تنظیم در روشن شدن دستگاه</string>
+    <string name="color_red">قرمز</string>
+    <string name="color_green">سبز</string>
+    <string name="color_blue">آبی</string>
+    <string name="color_minimum">میانه رنگ ها</string>
+    <string name="saturation">اشباع رنگ ها</string>
+    <string name="value">مقدار رنگ ها</string>
+    <string name="contrast">کنتراست رنگ ها</string>
+    <string name="hue">رنگ ظاهری</string>
+    <string name="grayscale">صفحه نمایش خاکستری (مناسب مطالعه)</string>
+    <string name="presets_dialog_title">انتخاب حالت</string>
+
+    <!-- Presets -->
+    <string name="preset_default">پیشفرض</string>
+    <string name="preset_version_1">حالت ۱</string>
+    <string name="preset_version_2">حالت ۲</string>
+    <string name="preset_version_3">حالت ۳</string>
+    <string name="preset_triluminous">تریلومینوس</string>
+    <string name="preset_deep_black_white">سیاه و سفید گرم</string>
+    <string name="preset_deep_natural">طبیعی و گرم</string>
+    <string name="preset_cool_amoled">امولد سرد</string>
+    <string name="preset_extreme_amoled">امولد ویژه</string>
+    <string name="preset_warm_amoled">امولد گرم</string>
+    <string name="preset_hybrid_mamba">هایبرد مومبا</string>
+    <string name="preset_hide_ge1">پنهان کردن لکه های صفحه نمایش ۱</string>
+    <string name="preset_hide_ge2">پنهان کردن لکه های صفحه نمایش ۲</string>
+
+    <!-- menu -->
+    <string name="kcal_presets">@string/presets_dialog_title</string>
+    <string name="kcal_reset">بازنشانی</string>
+
+    <!-- CustomSeekBarPreference -->
+    <string name="edit_value">مقدار جدیدی را انتخاب کنید</string>
+    <string name="default_value">مقدار پیشفرض</string>
+    <string name="edit_hint">مقدار بین %1$d و %2$d</string>
+</resources>
