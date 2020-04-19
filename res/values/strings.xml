@@ -37,7 +37,7 @@
     <string name="cat_calibration">Display Calibration</string>
     <string name="kcal_enabled">On</string>
     <string name="kcal_disabled">Off</string>
-    <string name="set_on_boot">Set On Boot</string>
+    <string name="set_on_boot">Set on boot</string>
     <string name="color_red">Red</string>
     <string name="color_green">Green</string>
     <string name="color_blue">Blue</string>
