@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name and summary -->
+    <string name="advanced_settings">Fitur perangkat</string>
+    <string name="advanced_settings_summary">Opsi khusus perangkat</string>
+
+    <!-- Buttons -->
+    <string name="buttons_title">Tombol</string>
+    <string name="swapbuttons_title">Tukar tombol</string>
+    <string name="swapbuttons_summary">Tukar urutan tombol recents dan tombol back</string>
+
+    <!-- Fingerprint options -->
+    <string name="fingerprint_title">Opsi sidik jari</string>
+    <string name="fingerprint_wakeup_title">Perangkat bangun sidik jari</string>
+    <string name="fingerprint_wakeup_summary">Mengizinkan sidik jari untuk membangunkan perangkat saat layar mati</string>
+    <string name="fingerprint_as_button_title">Sidik jari sebagai tombol</string>
+    <string name="fingerprint_as_button_summary">Gunakan Pembaca Sidik Jari sebagai tombol Disesuaikan</string>
+
+    <!-- Gestures -->
+    <string name="gestures_title">Gerakan</string>
+    <string name="double_tap_to_wake_title">Tap dua kali untuk mengaktifkan</string>
+    <string name="double_tap_to_wake_summary">Ketuk dua kali pada perangkat layar bangun</string>
+
+    <!-- Torch -->
+    <string name="torch_title">Senter</string>
+    <string name="torch_brightness_title">Kecerahan</string>
+
+    <!-- Display -->
+    <string name="display_title">Tampilan</string>
+
+    <!-- KCal -->
+    <string name="device_kcal_title">Warna tampilan</string>
+    <string name="device_kcal_summary">Mengkalibrasi warna tampilan menggunakan KCAL</string>
+
+    <!-- Ambient Display -->
+    <string name="ambient_display_xiaomi">Xiaomi Doze</string>
+    <string name="advanced_doze_summary">Ambient Display</string>
+
+    <string name="vibration_title">Getaran</string>
+    <string name="vibration_strength_title">Intensitas</string>
+
+    <!-- Spectrum Profiles -->
+    <string name="spectrum_profile_title">Kinerja</string>
+    <string name="spectrum_title">Pengaturan profil</string>
+    <string name="spectrum_summary">Pilih profil kinerja Anda</string>
+    <string name="spectrum_dialogTitle">Pilih profil kinerja Anda</string>
+
+    <!-- Values for Spectrum Presets -->
+    <string name="spectrum_performance">Kinerja</string>
+    <string name="spectrum_battery">Baterai</string>
+    <string name="spectrum_gaming">Permainan</string>
+    <string name="spectrum_balance">Seimbang</string>
+    <string name="spectrum_extreme_battery">Penghematan baterai</string>
+
+    <!-- kcal -->
+    <string name="advanced_settings_kcal">Tampilan kalibrasi warna</string>
+    <string name="cat_colormanagement">Pengaturan warna</string>
+    <string name="cat_calibration">Kalibrasi tampilan</string>
+
+    <string name="kcal_enabled">Aktif</string>
+    <string name="kcal_disabled">Mati</string>
+    <string name="set_on_boot">Ditetapkan pada startup</string>
+    <string name="color_red">Merah</string>
+    <string name="color_green">Hijau</string>
+    <string name="color_blue">Biru</string>
+    <string name="color_minimum">Minimum</string>
+    <string name="saturation">Saturasi</string>
+    <string name="value">Nilai</string>
+    <string name="contrast">Kontras</string>
+    <string name="hue">Warna</string>
+    <string name="grayscale">Skala abu-abu</string>
+    <string name="presets_dialog_title">Pilih profil</string>
+
+    <!-- Presets -->
+    <string name="preset_default">Default</string>
+    <string name="preset_version_1">Versi 1</string>
+    <string name="preset_version_2">Versi 2</string>
+    <string name="preset_version_3">Versi 3</string>
+    <string name="preset_triluminous">Triluminous</string>
+    <string name="preset_deep_black_white">Deep hitam dan putih</string>
+    <string name="preset_deep_natural">Alami</string>
+    <string name="preset_cool_amoled">Warna AMOLED dingin</string>
+    <string name="preset_extreme_amoled">Warna AMOLED yang kuat</string>
+    <string name="preset_warm_amoled">Warna AMOLED panas</string>
+    <string name="preset_hybrid_mamba">Hibrida Mamba</string>
+    <string name="preset_hide_ge1">Batasi efek ghosting 1</string>
+    <string name="preset_hide_ge2">Batasi efek ghosting 2</string>
+
+    <!-- menu -->
+    <string name="kcal_presets">@string/presets_dialog_title</string>
+    <string name="kcal_reset">Setel ulang</string>
+
+    <!-- CustomSeekBarPreference -->
+    <string name="edit_value">Pilih nilai baru</string>
+    <string name="default_value">Nilai standar</string>
+    <string name="edit_hint">Nilai diantara %1$d dan %2$d</string>
+</resources>
+ 
