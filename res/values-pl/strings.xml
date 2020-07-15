@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Title names and summary -->
+    <string name="advanced_settings">Dodatki</string>
+    <string name="advanced_settings_summary">Dodatkowe ustawienia urządzenia</string>
+
+    <!-- Vibration -->
+    <string name="vibration_title">Wibracje</string>
+    <string name="vibration_strength_title">Siła</string>
+
+    <!-- Display title-->
+    <string name="display_title">Wyświetlacz</string>
+
+    <!-- Ambient Display -->
+    <string name="ambient_display_xiaomi">Aktywny wyświetlacz</string>
+    <string name="advanced_doze_summary">Wybudź ekran, po otrzymaniu powiadomienia</string>
+
+    <!-- kcal -->
+    <string name="device_kcal_title">KCAL</string>
+    <string name="device_kcal_summary">Kalibracja kolorów wyświetlacza przy użyciu KCAL</string>
+    <string name="advanced_settings_kcal">Kalibracja kolorów wyświetlacza</string>
+    <string name="cat_colormanagement">Ustawienia kolorów</string>
+    <string name="cat_calibration">Kalibracja wyświetlacza</string>
+    <string name="kcal_enabled">Włączone</string>
+    <string name="kcal_disabled">Wyłączone</string>
+    <string name="set_on_boot">Ustaw przy starcie</string>
+    <string name="color_red">Czerwony</string>
+    <string name="color_green">Zielony</string>
+    <string name="color_blue">Niebieski</string>
+    <string name="color_minimum">Minimum</string>
+    <string name="saturation">Saturacja</string>
+    <string name="value">Wartość</string>
+    <string name="contrast">Kontrast</string>
+    <string name="hue">Odcień</string>
+    <string name="grayscale">Wyświetlanie w skali szarości</string>
+
+    <!-- Presets -->
+    <string name="presets_dialog_title">Wybierz ustawienia</string>
+    <string name="preset_default">Domyślne</string>
+    <string name="preset_version_1">Wersja 1</string>
+    <string name="preset_version_2">Wersja 2</string>
+    <string name="preset_version_3">Wersja 3</string>
+    <string name="preset_triluminous">Triluminous</string>
+    <string name="preset_deep_black_white">Głęboka czerń i biel</string>
+    <string name="preset_deep_natural">Głęboki Naturalny</string>
+    <string name="preset_cool_amoled">Chłodny Amoled</string>
+    <string name="preset_extreme_amoled">Ekstremalny Amoled</string>
+    <string name="preset_warm_amoled">Ciepły Amoled</string>
+    <string name="preset_hybrid_mamba">Hybrydowa Mamba</string>
+    <string name="preset_hide_ge1">Ukryj powidoki 1</string>
+    <string name="preset_hide_ge2">Ukryj powidoki 2</string>
+
+    <!-- Butoons -->
+    <string name="buttons_title">Przyciski</string>
+
+    <!-- Swap buttons -->
+    <string name="swapbuttons_title">Zamień przyciski</string>
+    <string name="swapbuttons_summary">Zamień miejscami przyciski ostatnio uruchomionych aplikacji i powrotu</string>
+
+    <!-- Fingerprint -->
+    <string name="fingerprint_title">Odcisk palca</string>
+
+    <!-- Fingerprint wakeup -->
+    <string name="fingerprint_wakeup_title">Wybudzenie ekranu czytnikiem linii papilarnych</string>
+    <string name="fingerprint_wakeup_summary">Pozwól, aby czujnik linii papilarnych wybudził urządzenie, gdy ekran jest wyłączony</string>
+
+    <!-- Fingerprint as button -->
+    <string name="fingerprint_as_button_title">Uruchom ekran główny czytnikiem linii papilarnych</string>
+    <string name="fingerprint_as_button_summary">Używaj czytnika linii papilarnych jako przycisku Home</string>
+
+    <!-- FPS Info -->
+    <string name="fps_info_title">Nakładka FPS</string>
+    <string name="fps_info_summary">Pokaż nakładkę pokazującą aktualną ilość klatek na sekundę</string>
+
+    <!-- Gestures -->
+    <string name="gestures_title">Gesty</string>
+
+    <!-- Double tap to wake -->
+    <string name="double_tap_to_wake_title">Kliknij, by wybudzić</string>
+    <string name="double_tap_to_wake_summary">Kliknij dwukrotnie w dowolnym miejscu na ekranie, by wybudzić urządzenie</string>
+
+    <!-- Torch -->
+    <string name="torch_title">Latarka</string>
+    <string name="torch_brightness_title">Jasność</string>
+    
+    <!-- Spectrum Profiles -->
+    <string name="spectrum_profile_title">Spectrum</string>
+    <string name="spectrum_title">Zarządzanie wydajnością</string>
+    <string name="spectrum_summary">Wybierz ustawienia wydajności</string>
+    <string name="spectrum_dialogTitle">Wybierz ustawienia wydajności</string>
+
+    <!-- Values for Spectrum Presets -->
+    <string name="spectrum_performance">Wysoka wydajność</string>
+    <string name="spectrum_battery">Oszczędny</string>
+    <string name="spectrum_gaming">Gry</string>
+    <string name="spectrum_balance">Zbalansowany</string>
+    <string name="spectrum_extreme_battery">Bardzo oszczędny</string>
+
+    <!-- menu -->
+    <string name="kcal_presets">@string/presets_dialog_title</string>
+    <string name="kcal_reset">Reset</string>
+
+    <!-- CustomSeekBarPreference -->
+    <string name="edit_value">Wybierz nową wartość </string>
+    <string name="default_value">Wartość domyślna</string>
+    <string name="edit_hint">Wartość pomiędzy %1$d a %2$d</string>
+</resources>
